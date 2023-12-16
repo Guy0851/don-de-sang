@@ -1,19 +1,20 @@
-import logo from './don-sang.png';
 import './App.css';
+import MySpace from './component/space-component/space';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        <h1 id='titre'>
           Plateforme Mon Don
-        </p>
+        </h1>
       </header>
-      <body>
-        
+
+      <body className='App-body'>
+        <MySpace/>
       </body>
-      <footer>
+      
+      <footer className='App-footer'>
         <a
           className="App-link"
           href="https://reactjs.org"

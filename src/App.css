@@ -2,25 +2,46 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 6vmin;
-  pointer-events: none;
+#titre{
+  font : small-caps bold 28px/1 sans-serif;
+  margin: 2%;
 }
 
-
-
 .App-header {
-  background-color: #342831;
-  min-height: 10vh;
+  background-color: white;
+  height: 10vh;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content:baseline;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
+.App-body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./img/background-sang.jpg');
+  background-size: cover; /* Ajuste la taille de l'image pour couvrir l'ensemble du conteneur */
+  background-position: center; /* Centre l'image dans le conteneur */
+  height: 85vh;
+}
+
+.App-footer{
+  background-color: black;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
 .App-link {
-  color: #161da9;
+  color: rgb(141, 146, 165);
 }
 
+#MySpace{
+  background-color: rgb(56, 56, 112);
+  height: 75vh;
+  width: 120vh;
+  border-radius: 45px;
+}
