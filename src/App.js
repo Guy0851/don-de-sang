@@ -1,15 +1,11 @@
 import './App.css';
 import MySpace from './component/space-component/space';
+import Header from './component/header/header';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1 id='titre'>
-          Plateforme Mon Don
-        </h1>
-      </header>
-
+      <Header/>
       <body className='App-body'>
         <MySpace/>
       </body>
