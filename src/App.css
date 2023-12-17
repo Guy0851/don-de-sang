@@ -41,7 +41,9 @@
 }
 
 #MySpace{
-  background-color: rgb(56, 56, 112);
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
   height: 75vh;
   width: 120vh;
   border-radius: 45px;
@@ -49,4 +51,11 @@
 
 .logo-don-sang{
   width: 10vh;
+}
+
+#patient{
+  width: 52%;
+  height: 100%;
+  background-color: gray;
+  border-radius: 45px;
 }
