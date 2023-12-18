@@ -1,16 +1,22 @@
-import React from 'react';
 import logo from '../../img/logo-don-de-sang.webp';
+import RegisterLogin from './register+login';
+
 
 function Header() {
     return (
         <header className="App-header">
-            <img 
-            className='logo-don-sang'
-            src={logo}
-            alt='Logo de la plateforme "mon don"'/>
-            <h1 id='titre'>
-                Plateforme Mon Don
-            </h1>
+            <a id='home-link' href='/accueil'>
+                <img 
+                className='logo-don-sang'
+                src={logo}
+                alt='Logo de la plateforme "mon don"'/>
+            </a>
+                <h1 id='titre'>
+                    Plateforme Mon Don
+                </h1>
+            <span id='register-login'>
+                <RegisterLogin/>
+            </span>
         </header>
     );
 }
