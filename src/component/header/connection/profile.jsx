@@ -1,6 +1,6 @@
 function Profile(){
     return (
-        <a href="https://www.jeu.fr">My Account</a>
+        <a href="https://www.jeu.fr">Mon espace</a>
     )
 } 
 
