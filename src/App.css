@@ -123,7 +123,7 @@
 }
 
 .patient-button:active {
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   background-color: #CE8F8A;
   color: hsl(0, 0%, 100%);
   box-shadow: #906461 0px 0px 0px 0px;
@@ -139,7 +139,7 @@
     display: flex;
     flex-direction: column;
     max-height: 60%;
-    width: 80%;
+    max-width: 90%;
     font-size: 18px;
     align-items: center;
   }
