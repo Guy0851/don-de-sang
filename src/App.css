@@ -99,61 +99,37 @@
   justify-content:center;
 }
 
-.patient-button{
-    --color: #523434;
-    width: 50%;
-    padding: 0.8em 1.7em;
-    background-color: transparent;
-    border-radius: .3em;
-    position: absolute;
-    bottom: 10%;
-    overflow: hidden;
-    cursor: pointer;
-    transition: .2s;
-    font-weight: 400;
-    font-size: 17px;
-    border: 1px solid;
-    font-family: inherit;
-    text-transform: uppercase;
-    color: var(--color);
-    z-index: 1;
-  }
-    
-    .patient-button::before, .patient-button::after {
-    content: '';
-    display: block;
-    width: 50px;
-    height: 50px;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    border-radius: 50%;
-    z-index: -1;
-    background-color: var(--color);
-    transition: 0.2s ease;
-  }
-  
-  .patient-button::before {
-    top: -1em;
-    left: -1em;
-  }
-  
-  .patient-button::after {
-    left: calc(100% + 1em);
-    top: calc(100% + 1em);
-  }
-  
-  .patient-button:hover::before, .patient-button:hover::after {
-    height: 410px;
-    width: 410px;
-  }
-  
-  .patient-button:hover {
-    color: rgb(255, 255, 255);
-  }
-  
-  .patient-button:active {
-    filter: brightness(.8);
-  }
+
+.patient-button {
+  padding: 17px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 7%;
+  border: 0;
+  background-color: #FBF0E9;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 1s ease;
+}
+
+.patient-button:hover {
+  letter-spacing: 5px;
+  background-color: #CE8F8A;
+  color: hsl(0, 0%, 100%);
+  box-shadow: #906461 0px 7px 29px 0px;
+}
+
+.patient-button:active {
+  letter-spacing: 3px;
+  background-color: #CE8F8A;
+  color: hsl(0, 0%, 100%);
+  box-shadow: #906461 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 70ms;
+}
 
   .paragraphe{
     width: 90%;
@@ -164,6 +140,7 @@
     flex-direction: column;
     max-height: 60%;
     width: 80%;
+    font-size: 18px;
     align-items: center;
   }
 
