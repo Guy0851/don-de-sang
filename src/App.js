@@ -1,7 +1,9 @@
 import './App.css';
 import MySpace from './component/space-component/space';
 import Header from './component/header/header';
+import { useState} from 'react';
 
+const [state, setState] = useState(0)
 
 
 function App() {
