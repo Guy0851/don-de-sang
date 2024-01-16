@@ -5,7 +5,7 @@ import RegisterLogin from './register+login';
 function Header() {
     return (
         <header className="App-header">
-            <a id='home-link' href='/accueil'>
+            <a id='home-link' href='/'>
                 <img 
                 className='logo-don-sang'
                 src={logo}

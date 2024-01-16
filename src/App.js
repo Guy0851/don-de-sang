@@ -1,29 +1,20 @@
-import './App.css';
-import MySpace from './component/space-component/space';
-import Header from './component/header/header';
-import { useState} from 'react';
+import { Routes, Route } from 'react-router-dom';
 
-const [state, setState] = useState(0)
+import './App.css';
+import Home from './pages/Home';
+import MySpace from './pages/MySpasce';
+import {useState} from 'react';
+
+
 
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-      <body className='App-body'>
-        <MySpace/>
-      </body>
-      
-      <footer className='App-footer'>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          (Documentation officielle react)
-        </a>
-      </footer>
+    <div>
+      <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/myspace' element={<MySpace/>} />
+      </Routes>
     </div>
   );
 }
